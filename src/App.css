@@ -1,38 +1,89 @@
-.App {
+/* ******Search form******* */
+
+.headerclass{
+
+  height: 20em;
+  background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('./image/covid.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.searchform{
+  width: 20rem;
+  height: 5rem;
+}
+
+.searchinput{
+  
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  border-radius: 5rem;
+  width: 40rem;
+  height: 2em;
+  border: none;
+  outline: none;
+  transition: width 2s;
+  font-family:  'Bad Script', cursive;
+  font-size: 1rem;
+  padding-left: 2rem;
+  background-color: #E8E8E8;
+
+}
+
+/* *********Result************* */
+
+.resultcontainer{
+  width: 80%;
+  color: #3d5c5c;
+  display: flex;
+  margin: 3em 0 3em 11em;  
+  
+}
+.cases,.active,.recovered,.deceased{
+  width: 20%;
+  margin-right: 2em;
+  height: 13em;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+padding-top: 4em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cases,.active,.recovered,.deceased:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  
+}
+.cases{
+  background-color: #ffe6ff;
+ 
+  
+}
+.cases:hover{
+  background-color:  #ffccff;
+}
+.active{
+  background-color: #ffe6e6;
+}
+.active:hover{
+  background-color: #ffcccc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.recovered{
+  background-color:  #e6ffe6;
+
+}
+.recovered:hover{
+  background-color:  #ccffcc;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.deceased{
+  background-color: 	 #f0f5f5;
+}
+.deceased:hover{
+  background-color: #e0ebeb;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

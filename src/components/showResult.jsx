@@ -1,15 +1,21 @@
 import React from 'react';
 import ResultCard from './ResultCard';
-
-const ShowResult =({Results})=>{
+import Loader from './Loader';
+import Chart from './chart';
+const ShowResult =({results,loading,error})=>{
     
     return(
-        <div>
-            {Results.map((res,index)=>{
+        <div className="result">
+            {results.map((res,index)=>{
                 return(
-                    <ResultCard key={index} {...res} />
+                    <div>
+                    <ResultCard key={index} loading={loading} error={error} {...res}  />
+                    <Chart {...res}/>
+                    </div>
                 )
             })}
+
+      
         </div>
     )
 }

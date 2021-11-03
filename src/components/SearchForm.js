@@ -11,7 +11,9 @@ const SearchForm =({searchItem,handleSubmit,handleChange}) =>{
             value={searchItem}
             placeholder="type a country name ........"
             className="searchinput"
+            
             />
+            
 
         </form>
     </header>

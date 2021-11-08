@@ -70,7 +70,7 @@ function App() {
      
 
   return (
-    <section>
+    <section className="main">
     
     <SearchForm 
     searchItem={searchItem} 
